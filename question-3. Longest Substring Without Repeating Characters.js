@@ -4,11 +4,10 @@
 // Input: "abcabcbb"
 // Output: 3
 // Explanation: The answer is "abc", with the length of 3.
-var s =  "abcabcbb";
-str=s.split('');
-var ss = Array.from( new Set(str) );
 
+var lengthOfLongestSubstring = function(s) {
+    str=s.split('');
+    ss = Array.from( new Set(str) );
+    return ss.length
 
-console.log(ss.join(''))
-console.log(ss.length)
-
+};
