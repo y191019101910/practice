@@ -7,36 +7,29 @@
     //nums2 = [2]
     //The median is 2.0
 
-var nums1 = [1, 3];
-var nums2 = [2];
-var nums = nums1.concat(nums2);
-console.log(nums.sort());
-getMedian(nums)
-function getMedian (nums){
+var findMedianSortedArrays = function(nums1, nums2) {
+    nums = nums1.concat(nums2);
+    nums.sort();
     if (nums.length %2 ===0){
         median = (nums[nums.length / 2] + nums[nums.length / 2 - 1]) / 2
     }else {
         median = nums[(nums.length - 1) / 2 ]
     }
     return median;
+    console.log(median);
 };
-console.log(median);
-
 //Example 2:
 // nums1 = [1, 2]
 // nums2 = [3, 4]
 // The median is (2 + 3)/2 = 2.5
-var nums1 = [1, 2];
-var nums2 = [3, 4];
-var nums = nums1.concat(nums2);
-console.log(nums.sort());
-getMedian(nums)
-function getMedian (nums){
+var findMedianSortedArrays = function(nums1, nums2) {
+    nums = nums1.concat(nums2);
+    nums.sort();
     if (nums.length %2 ===0){
         median = (nums[nums.length / 2] + nums[nums.length / 2 - 1]) / 2
     }else {
         median = nums[(nums.length - 1) / 2 ]
     }
     return median;
+    console.log(median);
 };
-console.log(median);
