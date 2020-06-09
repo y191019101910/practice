@@ -9,7 +9,8 @@
 
 var findMedianSortedArrays = function(nums1, nums2) {
     nums = nums1.concat(nums2);
-    nums.sort();
+    nums.sort(function(a, b) {
+        return a - b});
     if (nums.length %2 ===0){
         median = (nums[nums.length / 2] + nums[nums.length / 2 - 1]) / 2
     }else {
